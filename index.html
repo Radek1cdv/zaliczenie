@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auta Radka</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="car.svg">
+  <link rel="shortcut icon" href="car.svg">
+</head>
+<body>
+  <h1>Samochody</h1>
+  <select id="car-brand">
+    <option value="all">Wszystkie marki</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="volkswagen">Volkswagen</option>
+  </select>
+  <select id="car-year">
+    <option value="all">Wszystkie lata</option>
+    <option value="2019">2019</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+  </select>
+  <input type="range" id="car-price" min="0" max="1500000" step="1000">
+  <span id="PLN" style="color: white;" ><a style="color: white;" id="price-value"></a> PLN</span>
+  <div class="car-list">
+    <div class="car-item" data-brand="audi" data-year="2022">
+      <img src="auta/audi/audia8.jpg" alt="Car 1">
+      <p>Marka: Audi A8</p>
+      <p>Moc silnika: 462KM</p>
+      <p>Przebieg: 12000km</p>
+      <p>Rok produkcji: 2022</p>
+      <p>Cena: 600000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="bmw" data-year="2021">
+      <img src="auta/bmw/bmwg22.jpg" alt="Car 2">
+      <p>Marka: BMW G22</p>
+      <p>Moc silnika: 374KM</p>
+      <p>Przebieg: 15000km</p>
+      <p>Rok produkcji: 2021</p>
+      <p>Cena: 230000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="mercedes" data-year="2023">
+      <img src="auta/mercedes/mercedess63e.jpg" alt="Car 3">
+      <p>Marka: Mercedes AMG S63e</p>
+      <p>Moc silnika: 612KM</p>
+      <p>Przebieg: 0km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 1200000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="volkswagen" data-year="2022">
+      <img src="auta/volkswagen/volkswagengolfr.jpg" alt="Car 4">
+      <p>Marka: Volkswagen Golf R</p>
+      <p>Moc silnika: 315KM</p>
+      <p>Przebieg: 500km</p>
+      <p>Rok produkcji: 2022</p>
+      <p>Cena: 350000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="bmw" data-year="2021">
+      <img src="auta/bmw/bmwi4.jpg" alt="Car 4">
+      <p>Marka: Bmw i4</p>
+      <p>Moc silnika: 544KM</p>
+      <p>Przebieg: 500km</p>
+      <p>Rok produkcji: 2021</p>
+      <p>Cena: 260000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="mercedes" data-year="2021">
+      <img src="auta/mercedes/mercedesc180.jpg" alt="Car 5">
+      <p>Marka: Mercedes c180</p>
+      <p>Moc silnika: 190KM</p>
+      <p>Przebieg: 19500km</p>
+      <p>Rok produkcji: 2021</p>
+      <p>Cena: 200000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="volkswagen" data-year="2023">
+      <img src="auta/volkswagen/volkswagentiago.jpg" alt="Car 6">
+      <p>Marka: Volkswagen Taigo</p>
+      <p>Moc silnika: 95KM</p>
+      <p>Przebieg: 25000km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 80000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="mercedes" data-year="2019">
+      <img src="auta/mercedes/mercedesC200d.jpg" alt="Car 7">
+      <p>Marka: Mercedes c200d</p>
+      <p>Moc silnika: 183KM</p>
+      <p>Przebieg: 20000km</p>
+      <p>Rok produkcji: 2019</p>
+      <p>Cena: 260000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="volkswagen" data-year="2023">
+      <img src="auta/volkswagen/volkswagenpolo.jpg" alt="Car 8">
+      <p>Marka: Volkswagen Polo</p>
+      <p>Moc silnika: 80KM</p>
+      <p>Przebieg: 21000km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 70000 PLN</p>
+    </div>
+    <div>
+      <div class="car-item" data-brand="audi" data-year="2023">
+      <img src="auta/audi/Audiq8.jpg" alt="Car 9">
+      <p>Marka: Audi Q8</p>
+      <p>Moc silnika: Silnik elektryczny</p>
+      <p>Przebieg: 15000km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 400000 PLN</p>
+    </div>
+    </div>
+      <div class="car-item" data-brand="audi" data-year="2023">
+      <img src="auta/audi/audirs.jpg" alt="Car 10">
+      <p>Marka: Audi rs e-tron</p>
+      <p>Moc silnika: 476KM</p>
+      <p>Przebieg: 11000km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 700000 PLN</p>
+    </div>
+    <div class="car-item" data-brand="bmw" data-year="2023">
+      <img src="auta/bmw/bmwx6.jpg" alt="Car 11">
+      <p>Marka: Bmw x6</p>
+      <p>Moc silnika: 530KM</p>
+      <p>Przebieg: 1000km</p>
+      <p>Rok produkcji: 2023</p>
+      <p>Cena: 415000 PLN</p>
+    </div>
+  </div>
+
+  <div class="config-form">
+    <div class="1">
+      <label for="financing">Finansowanie:</label>
+      <input type="radio" id="financing-leasing" name="financing" value="Leasing"> Leasing
+      <input type="radio" id="financing-gotowka" name="financing" value="Gotówka"> Gotówka
+    </div>
+    <div class="2">
+      <label for="name">Imię i nazwisko:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div class="3">
+      <label for="delivery-date">Data dostawy:</label>
+      <input type="date" id="delivery-date" name="delivery-date" min="" max="">
+    </div>
+    <div class="form-section">
+      <label>Akcesoria:</label>
+      <ul class="accessories-list">
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="1"> GPS (1500 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="2"> Kamera cofania (5000 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="3"> Wspomaganie parkowania (15000 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="4"> Klimatyzacja (7000 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="5"> Tempomat (12000 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="6"> Szyberdach (12000 PLN)
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="accessories" value="7"> Customowa tapicerka (20000 PLN)
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button id="purchase-btn">Zakup</button>
+      <button id="back-btn" onclick="pokaz()">Powrót do wyboru</button>
+    </div>
+    <div id="form-error" class="error"></div>
+  </div>
+
+  <div class="summary-page">
+    <h2>Podsumowanie zakupu</h2>
+    <img id="car-image" src="" alt="Car Image">
+    <p>Metoda płatności: <span id="payment-method"></span></p>
+    <p>Cena auta z akcesoriami: <span id="total-price"></span> PLN</p>
+    <p>Data odbioru<a id="gowno"></a></p>
+    <p>Dziękujemy za zakup!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
